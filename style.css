@@ -1,0 +1,252 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+}
+
+body {
+  background-color: var(--light-grey);
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  visibility: hidden;
+  overflow: hidden;
+  line-height: 0;
+  margin: 0;
+}
+
+main {
+  background-color: var(--white);
+  width: 500px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border-bottom-right-radius: 160px;
+  padding: 40px;
+}
+
+.date-input-section {
+  width: 100%;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.form-titles-and-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.inputBoxes {
+  border-radius: 5px;
+  border: 1px var(--light-grey) solid;
+  font-size: 32px;
+  padding: 10px;
+  width: 90px;
+  cursor: pointer;
+}
+
+.inputBoxes:focus {
+  outline: none !important;
+  border: 1px var(--purple) solid;
+}
+
+.inputLabels {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+  padding: 5px 5px 5px 0;
+  color: var(--smokey-grey);
+}
+
+.mid-line-button {
+  position: relative;
+  height: 35px;
+}
+
+hr {
+  width: 98%;
+  float: left;
+  border: 1px var(--light-grey) solid;
+}
+
+input[type="submit"] {
+  display: none;
+}
+
+.submit-btn-svg {
+  height: 80px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50px;
+}
+
+path {
+  fill: var(--purple);
+  transition: 0.1s ease-in-out;
+}
+
+path:hover {
+  fill: var(--off-black);
+}
+
+/* Removes increment buttons from number fields */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Error styling */
+.error-box {
+  border: 1px var(--light-red) solid;
+}
+
+.error-color {
+  display: block;
+  color: var(--light-red);
+}
+
+.requiredMsgBox {
+  height: 30px;
+}
+
+.requiredMsg {
+  font-size: 10px;
+  font-style: italic;
+  margin: 5px 0 0 0;
+}
+
+.hideMsg {
+  display: none;
+}
+
+.time-result {
+  width: 100%;
+  height: 70%;
+  font-size: 65px;
+  line-height: 75px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+/* Result numbers */
+.ind-result {
+  color: var(--purple);
+  font-size: 70px;
+}
+
+.time-text {
+  color: var(--off-black);
+}
+
+/* Footer */
+.attribution {
+  font-weight: 400;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--purple);
+  transition: 0.1s ease-in-out;
+}
+
+.attribution a:hover {
+  color: var(--smokey-grey);
+}
+
+
+@media (max-width: 680px) {
+  
+  main {
+    width: 340px;
+    padding: 30px 10px 0 10px;
+    border-radius: 20px;
+    border-bottom-right-radius: 120px;
+    height: 420px;
+  }
+
+  .date-input-section {
+    width: 90%;
+  }
+  
+  .form-section {
+    width: 100%;
+  }
+  
+  .form-titles-and-inputs {
+    width: 28%;
+    align-items: center;
+  }
+  
+  .inputBoxes {
+    font-size: 20px;
+    padding: 10px 0 10px 10px;
+    width: 88%;
+  }
+
+  .inputLabels {
+    align-self: flex-start;
+    font-size: 10px;
+  }
+
+  .requiredMsg {
+    font-size: 7px;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .submit-btn-svg {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .time-result {
+    width: 90%;
+    height: 60%;
+    font-size: 50px;
+    line-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+  }
+  
+  .ind-result {
+    font-size: 55px;
+  }
+}
