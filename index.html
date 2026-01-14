@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- main -->
+  <h1>Age Calculator App</h1>
+  <main>
+    <!-- section -->
+    <section class="date-input-section">
+      <!--  form -->
+      <form class="date-form">
+        <div class="form-section">
+          <div class="form-titles-and-inputs">
+            <label class="inputLabels" for="day">day</label>
+            <input class="inputBoxes" type="number" name="day" id="day" min="1" placeholder="DD">
+            <div class="requiredMsgBox">
+              <p class="hideMsg requiredMsg"></p>
+            </div>
+          </div>
+          <div class="form-titles-and-inputs">
+            <label class="inputLabels" for="month">month</label>
+            <input class="inputBoxes" type="number" name="month" id="month" min="1" placeholder="MM">
+            <div class="requiredMsgBox">
+              <p class="hideMsg requiredMsg"></p>
+            </div>
+          </div>
+          <div class="form-titles-and-inputs">
+            <label class="inputLabels" for="year">year</label>
+            <input class="inputBoxes" type="number" name="year" id="year" placeholder="YYYY">
+            <div class="requiredMsgBox">
+              <p class="hideMsg requiredMsg"></p>
+            </div>
+          </div>
+        </div>
+        <!-- button -->
+        <div class="mid-line-button">
+          <hr>
+          <label>
+            <input id="submit-btn" type="submit" />
+            <svg class="submit-btn-svg" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="2 2 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="m2.005 12.002c0-5.517 4.48-9.997 9.997-9.997 5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998zm6.21 1.524s1.505 1.501 3.259 3.254c.147.147.338.22.53.22s.384-.073.531-.22c1.753-1.752 3.258-3.254 3.258-3.254.145-.145.217-.335.216-.526 0-.192-.074-.384-.22-.53-.293-.293-.766-.295-1.057-.004l-1.978 1.977v-6.693c0-.414-.336-.75-.75-.75s-.75.336-.75.75v6.693l-1.978-1.978c-.289-.289-.762-.287-1.055.006-.146.147-.22.339-.221.53s.071.38.215.525z" fill-rule="nonzero"/>
+            </svg>
+          </label>
+        </div>
+      </form>
+    </section>
+    <!-- section flex column -->
+    <section class="time-result">
+      <div><span class="ind-result" id="year-result">--</span>&nbsp;<span class="time-text" id="year-text">years</span></div>
+      <div><span class="ind-result" id="month-result">--</span>&nbsp;<span class="time-text" id="month-text">months</span></div>
+      <div><span class="ind-result" id="day-result">--</span>&nbsp;<span class="time-text" id="day-text">days</span></div>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/p3lm3shka1" target="_blank">p3l3mshka1</a>.
+  </footer>
+</body>
+<script src="main.js"></script>
+</html>
